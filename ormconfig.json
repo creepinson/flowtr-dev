@@ -1,0 +1,22 @@
+
+{
+  "type": "mongodb",
+  "host": "localhost",
+  "database": "express-app",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "build/entity/*.js"
+  ],
+  "subscribers": [
+    "build/subscriber/*.js"
+  ],
+  "migrations": [
+    "build/migration/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "build/entity",
+    "migrationsDir": "build/migration",
+    "subscribersDir": "build/subscriber"
+  }
+}
